@@ -3,7 +3,8 @@
 <head>
 <!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Titillium+Web:400,600" rel="stylesheet" type="text/css"> 
-	<style>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css"> 	
+<style>
 		body {
 			margin: 0;
 			padding: 0;
@@ -95,12 +96,13 @@ font-size: inherit;
 		}
 		
 		.swatch {
-		width: 25%; height 50%; padding: 30px; margin: 10px; text-align: left; vertical-align: bottom; float: left;
+		box-sizing: border-box; width: 30%; height 50%; padding: 30px; margin: 10px; text-align: left; vertical-align: bottom; float: left;
 		}
 		
-		@media (max-width: 700px) {
+		@media (min-width: 500px) {
 			.swatch {
-				width: 80%; 
+				width: 100%; 
+margin: 10px auto;
 				clear: both;
 			}
 		}
@@ -112,15 +114,21 @@ font-size: inherit;
 		<h1>Curious Toad Brand Elements</h1>
 		<h2>Typography</h2>
 		<p>Main font is Titillium, used for headings and callouts.</p>
-		<p>Possibly use either Roboto or Open Sans for body copy.</p>
-		<h2>Colours</h2>
+		<p>Possibly use either <span style="font-family: Roboto;">Roboto</span> or <span style="font-family: 'Open Sans';">Open Sans</span> for body copy.</p>
+<div style="border-top: 5px dotted #ccc; border-bottom: 5px dotted #ccc;">
+<h3 style="text-align: left;">example heading for Roboto</h3>
+<p style="text-align: left; font-family: Roboto;">Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. </p>	
+<h3 style="text-align: left;">example heading for open sans</h3>
+<p style="text-align: left; font-family: 'Open Sans';">Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. </p>	
+</div>
+<h2>Colours</h2>
 		<p>Blue is the dominant colour used for backgrounds and large areas, allowing the neutral or accent colours to pop.</p>
 		<div class="swatch" style="background-color:#03010F"><span style="color: #fff;"><strong>DARK BLUE</strong></br>RGB: 3, 1, 15</br>Hex: #03010F</span></div>
 		<div class="swatch" style="background-color:#EA196C"><span style="color: #fff;"><strong>PINK</strong></br>RGB: 234, 25, 108</br>Hex: #EA196C</span></div>
 		<div class="swatch" style="background-color:#D8B724"><span style="color: #fff;"><strong>YELLOW</strong></br>RGB: 216, 183, 36</br>Hex: #D8B724</span></div>
 		<div class="swatch" style="background-color:#0EA196"><span style="color: #fff;"><strong>TEAL</strong></br>RGB: 14, 161, 150</br>Hex: #0EA196</span></div>
 		<div class="swatch" style="background-color:#000000"><span style="color: #fff;"><strong>BLACK</strong></br>RGB: 0, 0, 0</br>Hex: #000000</span></div>
-		<div class="swatch" style="background-color:#FFF; border: 3px dotted #ddd;"><span style="color: #000000;"><strong>WHITE</strong></br>RGB: 255, 255, 255</br>Hex: #FFFFFF</span></div>
+		<div class="swatch" style="background-color:#FFF; border: 3px dotted #ccc;"><span style="color: #000000;"><strong>WHITE</strong></br>RGB: 255, 255, 255</br>Hex: #FFFFFF</span></div>
 	</div>
 </body>
 </html>
